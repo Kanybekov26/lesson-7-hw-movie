@@ -18,8 +18,8 @@ const ContainerButtonYesNo = styled.div`
   `
 function DeleteModal({onClose, MoviesItem, movieId, setMovie}) {
 
+  console.log("gsgfbfdbd", MoviesItem);
 const deleteHandler = () => {
-
   const filteredMovies = MoviesItem.filter((movie) => movie.id !== movieId)
   setMovie(filteredMovies);
   onClose()
